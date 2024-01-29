@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	<PackageId>OpenTK.3D.Library</PackageId>
+    <Authors>Hugo Humberto Martins Teixeira</Authors>
+    <Company />
+    <Product>3D Engine</Product>
+    <Description>OpenTK 3D/2D engine, very fast for both 3D and 2D applications.
+
+Documentation at https://open.timber1900.tk</Description>
+    <PackageTags>3D, 2D, OpenTK, Engine</PackageTags>
+    <Version>2.4</Version>
+    <PackageReleaseNotes>OpenTK 4.0.6 support</PackageReleaseNotes>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|netcoreapp2.1|AnyCPU'">
+    <DocumentationFile>C:\Users\35196\source\repos\OpenTK3DEngine\Program\Program.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenTK" Version="4.6.4" />
+    <PackageReference Include="System.Drawing.Common" Version="5.0.2" />
+  </ItemGroup>
+
+</Project>
